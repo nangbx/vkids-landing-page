@@ -1,0 +1,43 @@
+.introduce {
+	width: 100%;
+	height: 170px;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	ul {
+		display: flex;
+		justify-content: space-between;
+		height: 140px;
+		width: 900px;
+	}
+	&-list {
+		width: 180px;
+		text-align: center;
+		p {
+			color: #247ddc;
+			font-size: 22px;
+			font-weight: 400;
+		}
+		h4 {
+			font-size: 24px;
+			text-shadow: -1px 6px 4px rgba(0, 0, 0, 0.22);
+			color: #ce393b;
+		}
+
+		span {
+			font-size: 100px;
+			color: #ce393b;
+			text-shadow: -1px 6px 4px rgba(0, 0, 0, 0.22);
+			line-height: 100px;
+			font-weight: 400;
+		}
+	}
+	&-rocket {
+		position: absolute;
+		left: 150px;
+		bottom: -100px;
+		z-index: 100;
+	}
+}

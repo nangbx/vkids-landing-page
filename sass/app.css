@@ -1,0 +1,453 @@
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: #2e6196;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+}
+.header-container {
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+}
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+.header-menu ul li a {
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: #247ee3;
+  color: white;
+  padding: 8px 12px;
+}
+
+@font-face {
+  font-family: "Linotte";
+  src: url("../fonts/Linotte Bold.ttf");
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Linotte";
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.slider {
+  width: 100%;
+  height: 930px;
+  background-color: #2786ec;
+  position: relative;
+  overflow: hidden;
+}
+.slider-img {
+  position: absolute;
+}
+.slider .logo {
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+}
+.slider .people {
+  left: 50%;
+  top: 335px;
+  transform: translateX(-50%);
+}
+.slider-header {
+  width: 870px;
+  position: absolute;
+  font-size: 69px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.slider .btn {
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.slider .start1 {
+  bottom: 10px;
+  right: 150px;
+  mix-blend-mode: lighten;
+}
+.slider .start2 {
+  top: 50px;
+  left: 200px;
+  mix-blend-mode: lighten;
+}
+.slider .gogo {
+  right: 250px;
+  bottom: -100px;
+}
+.slider .phone {
+  bottom: -100px;
+  left: 150px;
+  z-index: 2;
+}
+.slider .gift1 {
+  bottom: 300px;
+  right: 200px;
+}
+.slider .gift2 {
+  bottom: 50px;
+  left: 450px;
+  z-index: 3;
+}
+.slider .cloud {
+  top: 350px;
+  right: 150px;
+}
+.slider-sub {
+  width: 380px;
+  text-align: center;
+  font-size: 27px;
+  position: absolute;
+  top: 380px;
+  right: 160px;
+  color: #1f417b;
+}
+.slider .cloud1 {
+  top: 15px;
+  right: 20px;
+}
+.slider .cloud2 {
+  bottom: 230px;
+  z-index: 1;
+}
+
+.body {
+  margin-top: 60px;
+}
+
+.introduce {
+  width: 100%;
+  height: 170px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.introduce ul {
+  display: flex;
+  justify-content: space-between;
+  height: 140px;
+  width: 900px;
+}
+.introduce-list {
+  width: 180px;
+  text-align: center;
+}
+.introduce-list p {
+  color: #247ddc;
+  font-size: 22px;
+  font-weight: 400;
+}
+.introduce-list h4 {
+  font-size: 24px;
+  text-shadow: -1px 6px 4px rgba(0, 0, 0, 0.22);
+  color: #ce393b;
+}
+.introduce-list span {
+  font-size: 100px;
+  color: #ce393b;
+  text-shadow: -1px 6px 4px rgba(0, 0, 0, 0.22);
+  line-height: 100px;
+  font-weight: 400;
+}
+.introduce-rocket {
+  position: absolute;
+  left: 150px;
+  bottom: -100px;
+  z-index: 100;
+}
+
+.achievement {
+  width: 100%;
+  background-color: #2786ec;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.achievement-wrapper {
+  width: 1150px;
+  position: relative;
+}
+.achievement-rocket {
+  position: absolute;
+  top: -50px;
+  left: -40px;
+}
+.achievement-effective {
+  margin-top: 55px;
+  display: flex;
+}
+.achievement-effective .content {
+  margin-left: 50px;
+}
+.achievement-effective .content-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 68px;
+}
+.achievement-effective .content-dotted {
+  border-bottom: 1px dotted #fff;
+  width: 100%;
+  margin: 17px 0px;
+}
+.achievement-effective .content-row {
+  display: flex;
+}
+.achievement-effective .content-col {
+  display: flex;
+  flex-direction: row;
+}
+.achievement-effective .content-col .col-no-per {
+  width: 300px !important;
+  border-radius: 2px 39px 40px 2px;
+  margin-right: 41px;
+}
+.achievement-effective .content-col .info {
+  font-size: 27px;
+  color: #ffffff;
+}
+.achievement-effective .content-col .info span {
+  color: #fffc00;
+}
+.achievement-effective .content-col .col-text {
+  width: 265px;
+  height: 80px;
+  background-color: #ffffff;
+  line-height: 80px;
+  text-align: center;
+}
+.achievement-effective .content-col .col-text h3 {
+  font-size: 34px;
+}
+.achievement-effective .content-col .col-text h3.color-text1 {
+  color: #247ddc;
+}
+.achievement-effective .content-col .col-text h3.color-text2 {
+  color: #33b804;
+}
+.achievement-effective .content-col .col-text h3.color-text3 {
+  color: #ff6000;
+}
+.achievement-effective .content-col .col-text h3.color-text4 {
+  color: #ff9c00;
+}
+.achievement-effective .content-col .col-per {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background-image: radial-gradient(circle 61px at 47.76% 44.89%, #19c2d2 0%, #051caa 100%);
+  transform: translateX(-50%);
+}
+.achievement-effective .content-col .col-per h3 {
+  color: #ffffff;
+  font-size: 34px;
+  text-align: center;
+  line-height: 82px;
+}
+.achievement-card {
+  width: 100%;
+  border-radius: 20px;
+  background-color: #ffffff;
+  margin-top: 54px;
+  margin-bottom: 30px;
+}
+.achievement-card .card-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.achievement-card .card-img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.achievement-card .card-img img.img-center {
+  transform: translateY(-50px);
+}
+.achievement-card .card-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.achievement-card .card-info .text-decor {
+  width: 1078px;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, rgba(39, 134, 236, 0.99) 90%, rgba(255, 255, 255, 0) 0%);
+  background-position: top;
+  background-size: 15px 1px;
+  background-repeat: repeat-x;
+}
+.achievement-card .card-info .text-decor h3 {
+  text-align: center;
+  color: #ce393b;
+  font-size: 64px;
+  text-shadow: -1px 6px 4px rgba(0, 0, 0, 0.22);
+  -webkit-text-stroke: 2px #fff;
+  min-width: 300px;
+}
+.achievement-card .card-info .text-decor h4 {
+  line-height: 60px;
+  min-width: 300px;
+  text-align: center;
+  color: #247ddc;
+  font-size: 33px;
+}
+.achievement-card .card-info .line {
+  width: 1078px;
+  height: 45px;
+  background-image: linear-gradient(to right, rgba(39, 134, 236, 0.99) 90%, rgba(255, 255, 255, 0) 0%);
+  background-position: top;
+  background-size: 15px 1px;
+  background-repeat: repeat-x;
+}
+.achievement-cloud1 {
+  position: absolute;
+  left: -340px;
+  bottom: 500px;
+  z-index: 100;
+}
+.achievement-cloud2 {
+  position: absolute;
+  bottom: -100px;
+  right: -300px;
+}
+
+.method {
+  width: 100%;
+  background-color: #cae5ff;
+  position: relative;
+}
+.method-game {
+  position: absolute;
+  top: -100px;
+  right: 100px;
+}
+.method-line-1 {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  overflow: hidden;
+}
+.method-line-2 {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  overflow: hidden;
+}
+.method-title {
+  text-align: center;
+  padding-top: 60px;
+  background: linear-gradient(to top, #05af55 0%, #52c0ff 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-size: 71px;
+}
+.method-sub-title {
+  text-align: center;
+  margin-top: 13px;
+  font-size: 41px;
+  color: #000000;
+}
+.method-content {
+  display: flex;
+  justify-content: center;
+}
+.method-yt {
+  transform: translateY(-30px);
+}
+.method-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  width: 1150px;
+  position: relative;
+}
+.method-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+.method-list-item {
+  width: 555px;
+  height: 60px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  opacity: 0.6;
+  padding: 8px 9px;
+  display: flex;
+  gap: 10px;
+}
+.method-list-item .line {
+  width: 12px;
+  height: 100%;
+  border-radius: 6px;
+  background-color: #cae5ff;
+  background-image: linear-gradient(to top, #208ffa 0%, #81dfff 100%);
+}
+.method-list-item h4 {
+  font-size: 21px;
+  color: #004588;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
+.question {
+  width: 100%;
+  height: 190px;
+  background-color: #ff6600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.question-wrapper {
+  width: 1150px;
+  height: 160px;
+  border-radius: 78px;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.question-wrapper h2 {
+  color: #ffffff;
+  font-size: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.question-wrapper img {
+  transform: translateX(-50px);
+}/*# sourceMappingURL=app.css.map */
