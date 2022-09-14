@@ -1,0 +1,43 @@
+.teams {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	&-wrapper {
+		margin-top: 50px;
+		width: 1150px;
+	}
+	&-header {
+		font-size: 71px;
+		color: #1ca4ff;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 58px;
+	}
+	&-members {
+		display: flex;
+		justify-content: space-between;
+		.member {
+			width: 354px;
+			h4,
+			p {
+				font-family: "Barlow Condensed";
+				text-align: center;
+			}
+			&-info {
+				h4 {
+					font-size: 28px;
+					font-weight: 700;
+				}
+				p {
+					font-size: 28px;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+	&-img {
+		position: absolute;
+		left: 100px;
+		top: 0;
+	}
+}
