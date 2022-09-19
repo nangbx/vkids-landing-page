@@ -1,0 +1,142 @@
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: #2e6196;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+}
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1200px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-menu ul li a {
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: #247ee3;
+  color: white;
+  padding: 8px 12px;
+}
+
+@font-face {
+  font-family: "Linotte";
+  src: url("../fonts/Linotte Bold.ttf");
+}
+@font-face {
+  font-family: "Cookies";
+  src: url("../../fonts/SVN-Cookies.ttf");
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Linotte";
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.body {
+  margin-top: 60px;
+}
+
+.slider {
+  width: 100%;
+  height: 730px;
+  position: relative;
+  background-color: #247fe3;
+  overflow: hidden;
+}
+.slider-ui {
+  position: absolute;
+}
+.slider-ui-cloud-1 {
+  top: 100px;
+  right: -300px;
+}
+.slider-ui-cloud-2 {
+  bottom: 0px;
+}
+.slider-ui-human {
+  bottom: 0px;
+  left: 200px;
+}
+.slider-ui-star {
+  bottom: 80px;
+  left: -100px;
+  mix-blend-mode: lighten;
+}
+.slider-content {
+  width: 700px;
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.slider-content * {
+  font-family: "Cookies";
+}
+.slider-title {
+  font-size: 37px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.slider-subtitle {
+  margin-top: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 48px;
+  color: #ffea00;
+}
+.slider-link {
+  margin-top: 70px;
+  width: 370px;
+  height: 66px;
+  text-align: center;
+  -webkit-box-shadow: -4px 4px 10px 3px rgba(0, 0, 0, 0.18);
+          box-shadow: -4px 4px 10px 3px rgba(0, 0, 0, 0.18);
+  line-height: 66px;
+  border-radius: 33px;
+  border: 3px solid #ffffff;
+  background-color: #ffcb13;
+  color: #1c459a;
+  font-size: 38px;
+  text-transform: uppercase;
+}/*# sourceMappingURL=app.introduce.css.map */
