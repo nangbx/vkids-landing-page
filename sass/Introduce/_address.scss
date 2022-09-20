@@ -1,0 +1,46 @@
+.address {
+	width: 100%;
+	height: 1850px;
+	background-color: #2e68c3;
+	display: flex;
+	justify-content: center;
+	&-wrapper {
+		width: 1200px;
+	}
+	&-title {
+		width: 624px;
+		height: 84px;
+		margin: 60px auto;
+		border-radius: 42px;
+		background-color: #d1f9ff;
+		color: #2681ff;
+		font-size: 48px;
+		font-weight: 400;
+		line-height: 84px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	&-item {
+		margin-top: 60px;
+		&-title {
+			display: flex;
+			align-items: center;
+			h3 {
+				width: 100%;
+				margin-left: 15px;
+				font-size: 24px;
+				color: #ffffff;
+				display: flex;
+				text-transform: uppercase;
+			}
+			h3:after {
+				border-bottom: 2px dotted #ffffff;
+				height: 0.8em;
+
+				content: "";
+
+				flex: 1;
+			}
+		}
+	}
+}

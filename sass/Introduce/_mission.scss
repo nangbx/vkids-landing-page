@@ -1,0 +1,92 @@
+.mission {
+	background-color: #88ccff;
+	position: relative;
+	background-image: linear-gradient(
+		to top,
+		#ffffff 0%,
+		#ffffff 16%,
+		#88ccff 86%,
+		#88ccff 100%
+	);
+	display: flex;
+	justify-content: center;
+	&-ui-target {
+		position: absolute;
+		top: -65px;
+		right: 200px;
+		z-index: 200;
+	}
+	&-wrapper {
+		margin-top: 35px;
+		width: 1200px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		h2 {
+			text-align: center;
+			width: 435px;
+			height: 86px;
+			border-radius: 40px;
+			background-color: #d1f9ff;
+			color: #2681ff;
+			font-size: 48px;
+			text-transform: uppercase;
+			line-height: 86px;
+		}
+	}
+	&-card {
+		display: flex;
+		gap: 30px;
+		.card-img {
+			.card-img-info {
+				text-align: center;
+
+				* {
+					font-family: "Barlow Condensed", sans-serif;
+					color: #003475;
+					font-size: 45px;
+				}
+				p {
+					font-weight: 400;
+				}
+				h4 {
+					font-weight: 700;
+				}
+			}
+		}
+		.card-content {
+			box-sizing: border-box;
+			padding: 30px;
+			width: 760px;
+			height: 300px;
+			border-radius: 16px;
+			background-color: #e2f2ff;
+			align-self: flex-end;
+			margin-bottom: 20px;
+			span {
+				color: #ffa200;
+				text-transform: uppercase;
+			}
+			p {
+				font-family: "Barlow Condensed", sans-serif;
+				font-size: 29px;
+				color: #322020;
+			}
+			p::before {
+				content: open-quote;
+				font-family: "Linotte";
+				text-align: start;
+			}
+			p::after {
+				font-family: "Linotte";
+				content: close-quote;
+			}
+		}
+	}
+	.flex-reverse {
+		flex-direction: row-reverse;
+		.card-content {
+			align-self: center !important;
+		}
+	}
+}

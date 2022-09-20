@@ -1,0 +1,124 @@
+.application {
+	width: 100%;
+	height: 740px;
+	display: flex;
+	justify-content: center;
+	padding-top: 100px;
+	background-color: #bde2ff;
+	position: relative;
+	overflow: hidden;
+	&-ui {
+		position: absolute;
+		bottom: -150px;
+	}
+	&-wrapper {
+		width: 1200px;
+		height: 575px;
+		background-color: #ffffff;
+		border-radius: 27px;
+		position: relative;
+	}
+	&-bg {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 1;
+	}
+	&-container {
+		position: relative;
+		z-index: 10;
+	}
+	&-header {
+		width: 452px;
+		height: 84px;
+		border-radius: 42px;
+		background-color: #d1f9ff;
+		font-family: "Linotte";
+		font-weight: 400;
+		line-height: 84px;
+		font-size: 48px;
+		text-align: center;
+		color: #2681ff;
+		z-index: 1;
+		text-transform: uppercase;
+		margin: -42px auto;
+	}
+	&-header-sub {
+		font-family: "Barlow Condensed", sans-serif;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 30px;
+		color: #1a468b;
+		text-align: center;
+		margin-top: 85px;
+		span {
+			color: #fd7205;
+		}
+	}
+	&-content {
+		margin-top: 52px;
+		padding: 0px 70px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&-item {
+		&-num {
+			width: 238px;
+			height: 238px;
+			border-radius: 50%;
+			position: relative;
+			h4 {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				text-align: center;
+
+				color: #ffffff;
+				font-size: 42px;
+				font-weight: 400;
+				span {
+					font-size: 50px;
+				}
+			}
+		}
+		&-info {
+			margin-top: 13px;
+			font-size: 20px;
+			font-weight: 400;
+			text-align: center;
+		}
+	}
+	&-orange {
+		.application-item-num {
+			background-color: #43a6b5;
+			background-image: linear-gradient(to top, #efa60a 0%, #ff6600 100%);
+		}
+		.application-item-info {
+			color: #e26806;
+		}
+	}
+	&-purple {
+		.application-item-num {
+			background-color: #43a6b5;
+			background-image: linear-gradient(to top, #ef0a6a 0%, #b6359c 100%);
+		}
+		.application-item-info {
+			color: #c9318d;
+		}
+	}
+	&-red {
+		.application-item-num {
+			background-color: #43a6b5;
+			background-image: linear-gradient(
+				to right,
+				#ff0000 0%,
+				#f91362 50%,
+				#ff8e44 100%
+			);
+		}
+		.application-item-info {
+			color: #fd0048;
+		}
+	}
+}

@@ -957,7 +957,7 @@ ul {
   width: 100%;
   height: 670px;
   margin-top: 10px;
-  background-image: url("/images/ui-bg-gift.png");
+  background-image: url("../../images/Homepage/ui-bg-gift.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -979,7 +979,7 @@ ul {
 .contact-title-text {
   width: 580px;
   height: 78px;
-  background-image: url("../images/ui-rectangle-1.png");
+  background-image: url("../../images/Homepage/ui-rectangle-1.png");
   text-align: center;
   position: relative;
 }
@@ -992,7 +992,7 @@ ul {
 .contact-title-percent {
   height: 130px;
   width: 150px;
-  background-image: url("../images/ui-rectangle-2.png");
+  background-image: url("../../images/Homepage/ui-percent.png");
   position: absolute;
   right: -30px;
   top: -30px;
@@ -1016,7 +1016,7 @@ ul {
   margin-top: 40px;
   width: 100%;
   height: 45px;
-  background-image: url("/images/ui-rectangle-2.png");
+  background-image: url("../../images/Homepage/ui-rectangle-2.png");
   text-align: center;
   line-height: 45px;
   font-size: 28px;
@@ -1060,7 +1060,7 @@ ul {
 }
 
 .footer {
-  background-image: url("../images/ui-bg-footer.png");
+  background-image: url("../../images/Homepage/ui-bg-footer.png");
   height: 450px;
   width: 100%;
   display: -webkit-box;

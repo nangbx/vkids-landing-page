@@ -1,0 +1,75 @@
+.teams {
+	display: flex;
+	justify-content: center;
+	&-wrapper {
+		width: 1200px;
+	}
+	&-title {
+		margin-top: 50px;
+		font-family: "Linotte";
+		font-size: 48px;
+		font-weight: 400;
+		color: #2681ff;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	&-subtitle {
+		width: 980px;
+		margin: 18px auto 40px;
+		text-align: center;
+		font-family: "Barlow Condensed", sans-serif;
+		font-size: 29px;
+		font-weight: 400;
+		color: #093a84;
+	}
+	&-members {
+		margin-bottom: 57px;
+		display: flex;
+		gap: 20px;
+		flex-direction: row;
+	}
+	&-member {
+		width: 374px;
+		height: 479px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		h4 {
+			font-family: "Barlow Condensed", sans-serif;
+			font-size: 27px;
+			font-weight: 700;
+			position: absolute;
+			left: 30px;
+			bottom: 125px;
+		}
+		p {
+			position: absolute;
+			left: 30px;
+			bottom: 30px;
+			width: 330px;
+			text-align: center;
+			font-family: "Barlow Condensed", sans-serif;
+			color: #ffffff;
+			font-weight: 500;
+			font-size: 27px;
+		}
+	}
+	&-member:nth-child(1) {
+		background-image: url("../../images/Introduce/ui-teams-1.png");
+		h4 {
+			color: #f34e06;
+		}
+	}
+	&-member:nth-child(2) {
+		background-image: url("../../images/Introduce/ui-teams-2.png");
+		h4 {
+			color: #e61d73;
+		}
+	}
+	&-member:nth-child(3) {
+		background-image: url("../../images/Introduce/ui-teams-3.png");
+		h4 {
+			color: #f34e06;
+		}
+	}
+}
