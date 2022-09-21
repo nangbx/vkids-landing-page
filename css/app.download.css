@@ -1,0 +1,487 @@
+@font-face {
+  font-family: "Linotte Bold";
+  src: url("../fonts/Linotte Bold.ttf");
+}
+@font-face {
+  font-family: "Linotte Light";
+  src: url("../fonts/Linotte Light.ttf");
+}
+@font-face {
+  font-family: "Linotte Semi Bold";
+  src: url("../../fonts/Linotte Semi Bold.ttf");
+}
+@font-face {
+  font-family: "Linotte Heavy";
+  src: url("../fonts/Linotte Heavy.ttf");
+}
+@font-face {
+  font-family: "Linotte Regular";
+  src: url("../fonts/Linotte Regular.ttf");
+}
+@font-face {
+  font-family: "Cookies";
+  src: url("../../fonts/SVN-Cookies.ttf");
+}
+@font-face {
+  font-family: "Barlow Condensed - Semi Bold";
+  src: url("../../fonts/BarlowCondensed-SemiBold.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Linotte Regular";
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Linotte Bold";
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.download {
+  width: 100%;
+  height: 1200px;
+  background-color: #94d2ff;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.download-ui {
+  position: absolute;
+}
+.download-ui-bg {
+  top: 0px;
+  z-index: 1;
+}
+.download-ui-header {
+  top: 35px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 20;
+}
+.download-wrapper {
+  margin-top: 17px;
+  width: 1200px;
+  height: 1157px;
+  background-color: #ffffff;
+  border-radius: 22px;
+  position: relative;
+  z-index: 10;
+}
+.download-title {
+  position: relative;
+  z-index: 30;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 45px;
+  gap: 20px;
+}
+.download-title h1 {
+  font-size: 43px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-weight: 400;
+  color: #ffea06;
+  text-transform: uppercase;
+}
+.download-title h1 span {
+  font-size: 63px;
+  color: #ff4c06;
+  text-shadow: 7px 10px 0 rgba(0, 0, 0, 0.1);
+  -webkit-text-stroke: 4px #fff;
+}
+.download-content {
+  margin-top: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.download-content-title {
+  font-size: 39px;
+  color: #2f2f2f;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.download-card {
+  width: 1037px;
+  border-radius: 29px;
+  margin-bottom: 36px;
+  background-color: #f3fbff;
+}
+.download-card-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.download .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.download-link {
+  max-width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+.download-link p {
+  font-size: 23px;
+  color: #333333;
+  font-style: italic;
+}
+.download-qr-image {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  height: 247px;
+  width: 247px;
+  border: 4px solid #f2cd50;
+  -webkit-box-shadow: 1px 5px 30px 2px rgba(0, 0, 0, 0.23);
+          box-shadow: 1px 5px 30px 2px rgba(0, 0, 0, 0.23);
+  border-radius: 18px;
+}
+.download-qr-info {
+  margin-top: 57px;
+  margin-left: 40px;
+}
+.download-qr-info h3 {
+  font-family: "Linotte Bold";
+  font-size: 29px;
+}
+.download-qr-info p {
+  font-size: 23px;
+  font-style: italic;
+}
+.download-qr {
+  position: relative;
+}
+.download-qr-ui {
+  position: absolute;
+  bottom: -70px;
+  right: -60px;
+}
+
+.feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  background-color: #fff7dc;
+  overflow: hidden;
+}
+.feedback-wrapper {
+  width: 1200px;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 35px;
+  gap: 32px;
+}
+.feedback-ui {
+  position: absolute;
+}
+.feedback-ui-bg {
+  z-index: 1;
+}
+.feedback-title {
+  width: 600px;
+  margin-top: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.feedback-title h2 {
+  font-family: "Linotte Bold";
+  font-size: 75px;
+}
+.feedback-title h2:nth-child(1) {
+  color: #5698f6;
+}
+.feedback-title h2:nth-child(2) {
+  color: #d83e66;
+}
+.feedback-title-img1 {
+  width: 520px;
+  height: 461px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.feedback-title-img2 {
+  width: 191px;
+  height: 208px;
+}
+.feedback-message {
+  width: 477px;
+  height: 822px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f1f5f9;
+}
+
+.form {
+  width: 100%;
+  height: 760px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.form-wrapper {
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 25px;
+  z-index: 10;
+}
+.form-ui {
+  position: absolute;
+}
+.form-ui-bg {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.form-title {
+  margin-left: 300px;
+}
+.form-title h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 43px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-title h4 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+.form-title h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 73px;
+  font-weight: 700;
+  color: #f2cd50;
+  text-align: center;
+}
+.form-title ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 25px;
+}
+.form-title ul li h4 {
+  text-align: center;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 58px;
+  color: #ffffff;
+  line-height: 50px;
+}
+.form-title ul li span {
+  width: 79px;
+  display: inline-block;
+  text-align: center;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.form-title ul li.padding {
+  width: 79px;
+  height: 79px;
+  border-radius: 8px;
+  border: 4px solid #f2cd50;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#871f0e), to(#d63a19));
+  background-image: linear-gradient(to top, #871f0e 0%, #d63a19 100%);
+}
+.form-content {
+  margin-top: 90px;
+  margin-left: 70px;
+  width: 483px;
+  height: 605px;
+  border: 4px solid #f2cd50;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#871f0e), to(#d63a19));
+  background-image: linear-gradient(to top, #871f0e 0%, #d63a19 100%);
+  border-radius: 17px;
+  position: relative;
+}
+.form-content-ui {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
+}
+.form-content-cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 15px;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 10;
+}
+.form-content-cost p {
+  text-align: center;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.form-content-cost h3 {
+  text-align: center;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  color: #010e6b;
+}
+.form-content-cost .cost-old h3 {
+  color: #010e6b;
+  text-decoration: line-through;
+}
+.form-content-cost .cost-new h3 {
+  color: #e50313;
+}
+.form-content-cost img {
+  width: 18px;
+  height: 21px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.form-content-header {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #f8e5b8;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.form form {
+  padding: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.form form input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 52px;
+  border-radius: 26px;
+  border: 4px solid #f2cd50;
+  background-color: #fff0d3;
+  margin-bottom: 30px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #060606;
+  padding: 15px 24px;
+}
+.form form button {
+  width: 273px;
+  height: 63px;
+  border-radius: 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 4px solid #f2cd50;
+  background-color: #111e46;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 5px;
+  line-height: 45px;
+}/*# sourceMappingURL=app.download.css.map */
