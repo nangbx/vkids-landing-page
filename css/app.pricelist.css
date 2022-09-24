@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "Linotte Bold";
+  src: url("../fonts/Linotte Bold.ttf");
+}
+@font-face {
+  font-family: "Linotte Light";
+  src: url("../fonts/Linotte Light.ttf");
+}
+@font-face {
+  font-family: "Linotte Semi Bold";
+  src: url("../../fonts/Linotte Semi Bold.ttf");
+}
+@font-face {
+  font-family: "Linotte Heavy";
+  src: url("../fonts/Linotte Heavy.ttf");
+}
+@font-face {
+  font-family: "Linotte Regular";
+  src: url("../fonts/Linotte Regular.ttf");
+}
+@font-face {
+  font-family: "Cookies";
+  src: url("../../fonts/SVN-Cookies.ttf");
+}
+@font-face {
+  font-family: "Barlow Condensed - Semi Bold";
+  src: url("../../fonts/BarlowCondensed-SemiBold.ttf");
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Linotte Semi Bold";
+}
+
+a {
+  text-decoration: none;
+}
+
+.list {
+  width: 100%;
+  background-color: #9bcaff;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.list-wrapper {
+  position: relative;
+  z-index: 10;
+  padding-top: 75px;
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  margin-bottom: 25px;
+}
+.list-ui {
+  position: absolute;
+}
+.list-ui-bg {
+  z-index: 1;
+}
+.list a {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: 10;
+  width: 273px;
+  height: 63px;
+  border-radius: 31px;
+  border: 4px solid #f2cd50;
+  background-color: #111e46;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 12px;
+  text-transform: uppercase;
+}
+.list a p {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 39px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  line-height: 63px;
+}
+.list a img {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.list-item {
+  width: 396px;
+  position: relative;
+}
+.list-item-header {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 60px;
+  background-image: linear-gradient(-188deg, #929fd0 0%, #2274c8 100%);
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 60px;
+}
+.list-item-content {
+  width: 100%;
+}
+.list-item-content img {
+  position: absolute;
+  top: 40px;
+  z-index: 1;
+  left: 0;
+  right: 0;
+}
+.list-item-content-info {
+  margin-top: 40px;
+  position: relative;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.list-item-content-info h2 {
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+}
+.list-item-content-info .old-price {
+  width: 241px;
+  height: 44px;
+  -webkit-box-shadow: inset 4px 4px 0 rgba(58, 124, 202, 0.7);
+          box-shadow: inset 4px 4px 0 rgba(58, 124, 202, 0.7);
+  border-radius: 22px;
+  background-color: #ffffff;
+  font-size: 30px;
+  text-decoration: line-through;
+  text-align: center;
+  line-height: 44px;
+  font-family: "Linotte Bold";
+  margin-bottom: 35px;
+}
+.list-item-content-info .new-price {
+  width: 340px;
+  height: 63px;
+  -webkit-box-shadow: inset 4px 4px 0 rgba(34, 116, 200, 0.7);
+          box-shadow: inset 4px 4px 0 rgba(34, 116, 200, 0.7);
+  border-radius: 31px;
+  background-color: #ffffff;
+  line-height: 63px;
+  color: #ff4800;
+  font-size: 52px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.list .item-hot .list-item-header {
+  background-image: linear-gradient(-188deg, #d0bb92 0%, #c82249 100%);
+  position: relative;
+}
+.list .item-hot .list-item-header-hot {
+  height: 94px;
+  width: 94px;
+  position: absolute;
+  left: -30px;
+  top: -30px;
+}
+.list .item-hot .list-item-header-hot p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%) rotate(-10deg);
+          transform: translate(-50%, -50%) rotate(-10deg);
+  font-size: 37px;
+}/*# sourceMappingURL=app.pricelist.css.map */
