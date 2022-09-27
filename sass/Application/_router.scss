@@ -1,0 +1,156 @@
+.router {
+	width: 100%;
+	height: 1310px;
+	background-image: url("../../images/Application/ui-bg-router.png");
+	display: flex;
+	justify-content: center;
+	&-wrapper {
+		width: 1200px;
+	}
+	&-title {
+		font-size: 44px;
+		color: #fffd3f;
+		text-align: center;
+		text-transform: uppercase;
+		margin-top: 85px;
+	}
+	&-timeline {
+		margin-top: 70px;
+		position: relative;
+		&-container {
+			height: 275px;
+			margin-left: 34px;
+			position: relative;
+			display: flex;
+			gap: 18px;
+			.content {
+				width: 472px;
+				height: 100%;
+				background-color: #ffffff;
+				border-radius: 4px;
+				img {
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					z-index: 1;
+				}
+				h3,
+				h4 {
+					font-family: "Cookies";
+				}
+				h3,
+				h3,
+				p {
+					position: relative;
+					z-index: 10;
+				}
+				h3 {
+					line-height: 77px;
+					text-align: center;
+					font-size: 44px;
+					text-transform: uppercase;
+					color: #ffffff;
+				}
+				h4 {
+					font-size: 35px;
+					text-transform: uppercase;
+					text-align: center;
+				}
+				p {
+					padding: 15px 0px 0px 15px;
+					color: #c05414;
+					font-size: 34px;
+				}
+			}
+			.img {
+				display: flex;
+				height: 100%;
+				width: 662px;
+				background-color: #ffffff;
+				position: relative;
+				flex-direction: row-reverse;
+				img:nth-child(1) {
+					position: absolute;
+					bottom: 10px;
+					left: 0;
+				}
+			}
+		}
+		&-container:nth-child(1) {
+			.content {
+				h4 {
+					color: #e97e44;
+				}
+				p {
+					color: #c05414;
+				}
+			}
+		}
+		&-container:nth-child(2) {
+			margin-top: 38px;
+			.content {
+				h4 {
+					color: #ef4057;
+				}
+				p {
+					color: #e9425e;
+				}
+			}
+		}
+		&-container:nth-child(3) {
+			margin-top: 38px;
+			height: 316px;
+			.content {
+				h4 {
+					color: #2086d2;
+				}
+				p {
+					color: #2086d2;
+				}
+			}
+		}
+		&-container::after {
+			position: absolute;
+			top: 0;
+			left: -58px;
+			z-index: 10;
+			content: "";
+			box-sizing: border-box;
+			width: 54px;
+			height: 54px;
+			border: 12px solid transparent;
+			border-radius: 50%;
+			background-color: #7fdfec;
+		}
+		&-container:nth-child(1)::after {
+			background: linear-gradient(#bde2ff 0 0) padding-box,
+				linear-gradient(to top, #efa60a 0%, #ff6600 100%) border-box;
+		}
+		&-container:nth-child(2)::after {
+			background: linear-gradient(#bde2ff 0 0) padding-box,
+				linear-gradient(to top, #ef0a6a 0%, #b6359c 100%) border-box;
+		}
+		&-container:nth-child(3)::after {
+			background: linear-gradient(#bde2ff 0 0) padding-box,
+				linear-gradient(to right, #6bc1ec 0%, #40abf0 50%, #4e99dc 100%)
+					border-box;
+		}
+	}
+	&-timeline::after {
+		content: "";
+		width: 5px;
+		position: absolute;
+		top: 0;
+		bottom: 316px;
+		border-radius: 3px;
+		background-color: #003475;
+		background-image: linear-gradient(
+			-1deg,
+			#62baf3 0%,
+			#d93851 5%,
+			#fc8b2d 100%
+		);
+		opacity: 0.96;
+	}
+}

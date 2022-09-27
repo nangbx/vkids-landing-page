@@ -1,0 +1,70 @@
+.achievement {
+	background-image: linear-gradient(
+		to top,
+		#ffffff 0%,
+		#ffffff 16%,
+		#edcf90 86%,
+		#eccd8c 100%
+	);
+	display: flex;
+	justify-content: center;
+	&-wrapper {
+		width: 1200px;
+		padding-top: 58px;
+		margin-bottom: 100px;
+	}
+	&-title {
+		width: 1146px;
+		height: 100px;
+		background-image: url("../../images/Application/ui-achievement-title.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		position: relative;
+		* {
+			font-family: "Cookies";
+			text-align: center;
+			text-transform: uppercase;
+			color: #ff5800;
+		}
+		h2 {
+			width: 100%;
+			font-size: 59px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		span {
+			font-size: 78px;
+			font-weight: 400;
+		}
+	}
+	&-subtitle {
+		color: #ffffff;
+		font-size: 52px;
+		text-align: center;
+		margin-bottom: 56px;
+	}
+	&-content {
+		display: flex;
+		gap: 16px;
+	}
+	&-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 60px;
+	}
+	&-item {
+		p {
+			font-size: 27px;
+			font-weight: 500;
+			text-align: center;
+			color: #046a95;
+			span {
+				font-weight: 700;
+				color: #046a95;
+			}
+		}
+	}
+}

@@ -8,6 +8,15 @@
 	position: fixed;
 	z-index: 1000;
 	top: 0;
+	* {
+		font-family: "Linotte Bold";
+	}
+	ul {
+		list-style: none;
+	}
+	li {
+		font-size: 25px;
+	}
 	&-container {
 		display: flex;
 		width: 1300px;

@@ -1,3 +1,60 @@
+.body {
+  margin-top: 60px;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: #2e6196;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+}
+.header * {
+  font-family: "Linotte Bold";
+}
+.header ul {
+  list-style: none;
+}
+.header li {
+  font-size: 25px;
+}
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1300px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-menu ul li a {
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: #247ee3;
+  color: white;
+  padding: 8px 12px;
+}
+
 @font-face {
   font-family: "Linotte Bold";
   src: url("../fonts/Linotte Bold.ttf");
@@ -26,7 +83,7 @@
   font-family: "Barlow Condensed - Semi Bold";
   src: url("../../fonts/BarlowCondensed-SemiBold.ttf");
 }
-.header {
+.title {
   width: 100%;
   height: 500px;
   background-color: #247fe3;
@@ -39,34 +96,34 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-.header-wrapper {
+.title-wrapper {
   width: 1160px;
   position: relative;
 }
-.header-ui {
+.title-ui {
   position: absolute;
 }
-.header-ui-bg {
+.title-ui-bg {
   bottom: -10px;
 }
-.header-ui-gogo {
+.title-ui-gogo {
   right: 140px;
   bottom: 40px;
   z-index: 10;
 }
-.header-ui-star {
+.title-ui-star {
   right: -45px;
   z-index: 1;
   mix-blend-mode: lighten;
 }
-.header-title {
+.title-header {
   width: 465px;
   height: 209px;
   left: 180px;
   top: 75px;
   background-image: url("../../images/Questions/ui-cloud-2.png");
 }
-.header-title h1 {
+.title-header h1 {
   margin: 15px 0;
   vertical-align: middle;
   text-align: center;
