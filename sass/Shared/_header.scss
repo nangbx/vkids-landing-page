@@ -1,5 +1,6 @@
+@import "./responsive";
 .header {
-	width: 100%;
+	width: 100vw;
 	height: 60px;
 	background-color: #2e6196;
 	display: flex;
@@ -21,22 +22,20 @@
 		display: flex;
 		width: 1300px;
 		justify-content: space-between;
+		position: relative;
 	}
 	&-menu {
 		display: flex;
 		align-items: center;
-		ul {
-			li {
-				a {
-					font-size: 25px;
-					font-weight: 700;
-					text-transform: uppercase;
-					border-radius: 4px;
-					background-color: #247ee3;
-					color: white;
-					padding: 8px 12px;
-				}
-			}
+		gap: 5px;
+		a {
+			font-size: 25px;
+			font-weight: 700;
+			text-transform: uppercase;
+			border-radius: 4px;
+			background-color: #247ee3;
+			color: white;
+			padding: 8px 12px;
 		}
 	}
 }

@@ -34,32 +34,32 @@
 		left: 50%;
 		transform: translateX(-50%);
 	}
-	.start1 {
+	.star1 {
 		bottom: 10px;
 		right: 150px;
 		mix-blend-mode: lighten;
 	}
-	.start2 {
+	.star2 {
 		top: 50px;
 		left: 200px;
 		mix-blend-mode: lighten;
 	}
 	.gogo {
-		right: 250px;
+		right: 5%;
 		bottom: -100px;
 	}
 	.phone {
 		bottom: -100px;
-		left: 150px;
+		left: 3%;
 		z-index: 2;
 	}
 	.gift1 {
-		bottom: 300px;
-		right: 200px;
+		bottom: 20%;
+		right: 5%;
 	}
 	.gift2 {
 		bottom: 50px;
-		left: 450px;
+		left: 25%;
 		z-index: 3;
 	}
 	.cloud {
@@ -67,13 +67,19 @@
 		right: 150px;
 	}
 	&-sub {
-		width: 380px;
+		width: 406px;
+		height: 162px;
 		text-align: center;
 		font-size: 27px;
 		position: absolute;
-		top: 380px;
-		right: 160px;
+		top: 30%;
+		right: 5%;
+		padding-top: 60px;
 		color: #1f417b;
+		background-image: url("../../images/Homepage/CloudText.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
 	}
 	.cloud1 {
 		top: 15px;

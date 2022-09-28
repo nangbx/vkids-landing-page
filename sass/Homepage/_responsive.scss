@@ -1,0 +1,419 @@
+.body {
+	.slider {
+		@media (max-width: 575.98px) {
+		}
+
+		// Small devices (landscape phones, less than 768px)
+		@media (max-width: 767.98px) {
+			&-header {
+				width: 100%;
+				font-size: 40px;
+			}
+			.gogo {
+				display: none;
+			}
+		}
+
+		// Medium devices (tablets, less than 992px)
+		@media (max-width: 991.98px) {
+			&-header {
+				font-size: 50px;
+			}
+			&-sub {
+				display: none;
+			}
+		}
+
+		@media (max-width: 1000px) {
+			&-img {
+			}
+			.cloud1,
+			.cloud2,
+			.phone,
+			.gift1,
+			.gift2,
+			.star1,
+			.star2 {
+				display: none;
+			}
+		}
+
+		// Large devices (desktops, less than 1200px)
+		@media (max-width: 1199.98px) {
+		}
+	}
+	.introduce {
+		@media (max-width: 575.98px) {
+		}
+
+		// Small devices (landscape phones, less than 768px)
+		@media (max-width: 767.98px) {
+			ul {
+				width: 100%;
+			}
+			&-list {
+				span {
+					font-size: 60px;
+					line-height: 60px;
+				}
+			}
+		}
+
+		// Medium devices (tablets, less than 992px)
+		@media (max-width: 991.98px) {
+		}
+
+		@media (max-width: 1000px) {
+		}
+
+		// Large devices (desktops, less than 1200px)
+		@media (max-width: 1199.98px) {
+			&-rocket {
+				display: none;
+			}
+		}
+		@media (min-width: 1200px) {
+			ul {
+				width: 70%;
+			}
+		}
+	}
+	.achievement {
+		@media (max-width: 575.98px) {
+		}
+
+		// Small devices (landscape phones, less than 768px)
+		@media (max-width: 767.98px) {
+		}
+
+		@media (max-width: 850px) {
+			&-effective {
+				.content-row {
+					flex-direction: column;
+				}
+				.content-col {
+					.col-text {
+						width: 90% !important;
+					}
+				}
+			}
+		}
+
+		// Medium devices (tablets, less than 992px)
+		@media (max-width: 991.98px) {
+			&-effective {
+				img {
+					display: none;
+				}
+			}
+		}
+
+		// Large devices (desktops, less than 1200px)
+		@media (max-width: 1199.98px) {
+			&-wrapper {
+				padding-right: 10px;
+			}
+			&-card-list {
+				display: flex;
+				justify-content: center;
+				gap: 30px;
+				flex-wrap: wrap;
+			}
+			#achievement-card {
+				display: none;
+			}
+			&-card {
+				width: 550px;
+				padding-top: 10px;
+				.card-img {
+					padding-bottom: 10px;
+					height: 395px;
+					img {
+						object-fit: none;
+					}
+				}
+				.card-info {
+					.text-decor {
+						width: 100%;
+						justify-content: center;
+					}
+					.line {
+						width: 100%;
+					}
+				}
+			}
+		}
+		@media (min-width: 1200px) {
+			&-wrapper {
+				width: 1150px;
+			}
+			&-card {
+				display: block;
+			}
+			&-card-list {
+				display: none;
+			}
+		}
+	}
+	.method {
+		@media (max-width: 575.98px) {
+			&-yt {
+				img {
+					width: 100%;
+				}
+			}
+		}
+
+		// Small devices (landscape phones, less than 768px)
+		@media (max-width: 767.98px) {
+		}
+
+		// Medium devices (tablets, less than 992px)
+		@media (max-width: 991.98px) {
+			&-list {
+				width: 100% !important;
+			}
+		}
+
+		// Large devices (desktops, less than 1200px)
+		@media (max-width: 1199.98px) {
+			padding-bottom: 40px;
+			&-game {
+				display: none;
+			}
+			&-wrapper {
+				width: 100%;
+			}
+			&-wrapper {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			&-yt {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				img {
+					object-fit: cover;
+				}
+			}
+			&-list {
+				width: 50%;
+			}
+		}
+	}
+	.question {
+		@media (max-width: 575.98px) {
+			&-wrapper {
+				h2 {
+					font-size: 15px !important;
+				}
+			}
+		}
+
+		// Small devices (landscape phones, less than 768px)
+		@media (max-width: 767.98px) {
+			&-wrapper {
+				h2 {
+					font-size: 25px !important;
+				}
+			}
+		}
+
+		// Medium devices (tablets, less than 992px)
+		@media (max-width: 991.98px) {
+			&-wrapper {
+				h2 {
+					font-size: 35px;
+				}
+			}
+		}
+
+		// Large devices (desktops, less than 1200px)
+		@media (max-width: 1199.98px) {
+			&-wrapper {
+				width: 100%;
+				justify-content: center;
+				img {
+					display: none;
+				}
+			}
+		}
+	}
+	.answer {
+		@media (max-width: 575.98px) {
+			&-card {
+				.shape-yt {
+					width: 100%;
+					height: 100%;
+					img {
+						width: 100%;
+						height: 100%;
+						box-sizing: border-box;
+						padding: 0 10px;
+					}
+				}
+			}
+		}
+
+		// Large devices (desktops, less than 1200px)
+		@media (max-width: 1199.98px) {
+			&-wrapper {
+				width: 100%;
+			}
+			&-card {
+				width: 100%;
+				height: 100%;
+				margin-bottom: 40px;
+				flex-direction: column;
+				align-items: center;
+				.shape-yt {
+					position: relative;
+					right: 0;
+				}
+				.card-content {
+					width: 100%;
+					box-sizing: border-box;
+					padding: 10px 20px;
+					.content {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	.members {
+		@media (max-width: 767.98px) {
+			&-kids {
+				&-header {
+					h2 {
+						width: 100%;
+						font-size: 40px;
+					}
+				}
+			}
+		}
+
+		@media (max-width: 1199.98px) {
+			&-kids {
+				&-header {
+					justify-content: center;
+					text-align: center;
+					.kids-img,
+					.cup-img {
+						display: none;
+					}
+				}
+				&-content {
+					flex-wrap: wrap;
+					gap: 10px;
+				}
+			}
+		}
+	}
+	.teams {
+		@media (max-width: 767.98px) {
+			&-header {
+				font-size: 60px;
+			}
+		}
+
+		@media (max-width: 1199.98px) {
+			&-img {
+				display: none;
+			}
+		}
+	}
+	.contact {
+		@media (max-width: 575.98px) {
+		}
+
+		@media (max-width: 767.98px) {
+		}
+
+		@media (max-width: 991.98px) {
+		}
+		@media (max-width: 1199.98px) {
+			&-wrapper {
+				width: 100%;
+				gap: 50px;
+				padding-bottom: 120px;
+			}
+			&-title {
+				&-text {
+					width: 100%;
+				}
+			}
+			&-footer {
+				img {
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+		}
+	}
+	.blog {
+		@media (max-width: 575.98px) {
+		}
+
+		// Small devices (landscape phones, less than 768px)
+		@media (max-width: 767.98px) {
+		}
+
+		// Medium devices (tablets, less than 992px)
+		@media (max-width: 991.98px) {
+			&-list {
+				padding: 0 20px;
+			}
+			&-wrapper {
+				width: 100%;
+			}
+		}
+
+		// Large devices (desktops, less than 1200px)
+		@media (max-width: 1199.98px) {
+		}
+	}
+	.notification {
+		@media (max-width: 575.98px) {
+			&-content {
+				h2 {
+					font-size: 30px !important;
+				}
+				a {
+					padding: 13px 20px;
+				}
+			}
+		}
+
+		// Small devices (landscape phones, less than 768px)
+		@media (max-width: 767.98px) {
+			&-content {
+				h2 {
+					font-size: 40px !important;
+				}
+				a {
+					font-size: 30px !important;
+					padding: 13px 30px;
+				}
+			}
+		}
+
+		// Medium devices (tablets, less than 992px)
+		@media (max-width: 991.98px) {
+			&-content {
+				h2 {
+					font-size: 50px;
+				}
+				a {
+					font-size: 40px;
+				}
+			}
+		}
+
+		// Large devices (desktops, less than 1200px)
+		@media (max-width: 1199.98px) {
+		}
+	}
+}

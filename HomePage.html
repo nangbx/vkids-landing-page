@@ -10,8 +10,13 @@
 			href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
 		<title>Homepage</title>
 		<link rel="stylesheet" href="./css/app.homepage.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	</head>
 	<body>
 		<div class="header">
@@ -20,17 +25,16 @@
 					<img src="./images/Homepage/Logo.png" alt="" />
 				</div>
 				<div class="header-menu">
-					<ul>
-						<li>
-							<a href="./HomePage.html">Trang chủ</a>
-							<a href="./Introduce.html">Về chúng tôi</a>
-							<a href="./Application.html">Sản phẩm</a>
-							<a href="">Góc Tiếng Anh</a>
-							<a href="./Questions.html">Hỗ trợ</a>
-							<a href="./Download.html">Tải ứng dụng</a>
-							<a href="./PriceList.html">Bảng giá</a>
-						</li>
-					</ul>
+					<a href="./HomePage.html">Trang chủ</a>
+					<a href="./Introduce.html">Về chúng tôi</a>
+					<a href="./Application.html">Sản phẩm</a>
+					<a href="">Góc Tiếng Anh</a>
+					<a href="./Questions.html">Hỗ trợ</a>
+					<a href="./Download.html">Tải ứng dụng</a>
+					<a href="./PriceList.html">Bảng giá</a>
+					<a href="" class="icon">
+						<i class="ri-menu-line"></i>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -51,12 +55,12 @@
 				<img
 					src="./images/Homepage/Star_1.png"
 					alt=""
-					class="slider-img start1"
+					class="slider-img star1"
 				/>
 				<img
 					src="./images/Homepage/Star_2.png"
 					alt=""
-					class="slider-img start2"
+					class="slider-img star2"
 				/>
 				<img src="./images/Homepage/GOGO.png" alt="" class="slider-img gogo" />
 				<img
@@ -74,11 +78,7 @@
 					alt=""
 					class="slider-img gift2"
 				/>
-				<img
-					src="./images/Homepage/CloudText.png"
-					alt=""
-					class="slider-img cloud"
-				/>
+
 				<h3 class="slider-sub">
 					Phương pháp NLP mới lạ cùng công nghệ tiên tiến lần đầu tiên có tại
 					Indonesia
@@ -135,7 +135,7 @@
 										</div>
 										<div class="col-per"><h3>98%</h3></div>
 									</div>
-									<div class="content-col">
+									<div class="content-col content-full">
 										<h3 class="info">
 											<span>Phát âm rõ hơn</span> nhờ luyện tập với giáo viên
 											bản ngữ hàng ngày
@@ -189,7 +189,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="achievement-card">
+					<div class="achievement-card" id="achievement-card">
 						<div class="card-img">
 							<img src="./images/Homepage/Group_4.png" alt="" />
 							<img
@@ -216,6 +216,59 @@
 								<h4></h4>
 							</div>
 							<div class="line"></div>
+						</div>
+					</div>
+					<div class="achievement-card-list" id="achievement-list">
+						<div class="achievement-card">
+							<div class="card-img">
+								<img src="./images/Homepage/Group_2.png" alt="" />
+							</div>
+							<div class="card-info">
+								<div class="text-decor text-header">
+									<h3>1.000+</h3>
+								</div>
+								<div class="text-decor">
+									<h4>Bài học tương tác</h4>
+								</div>
+								<div class="text-decor">
+									<h4></h4>
+								</div>
+								<div class="line"></div>
+							</div>
+						</div>
+						<div class="achievement-card">
+							<div class="card-img">
+								<img src="./images/Homepage/Group_3.png" alt="" />
+							</div>
+							<div class="card-info">
+								<div class="text-decor text-header">
+									<h3>2.500.000</h3>
+								</div>
+								<div class="text-decor">
+									<h4>Học viên trên toàn</h4>
+								</div>
+								<div class="text-decor">
+									<h4>thế giới</h4>
+								</div>
+								<div class="line"></div>
+							</div>
+						</div>
+						<div class="achievement-card">
+							<div class="card-img">
+								<img src="./images/Homepage/Group_4.png" alt="" />
+							</div>
+							<div class="card-info">
+								<div class="text-decor text-header">
+									<h3>5.000+</h3>
+								</div>
+								<div class="text-decor">
+									<h4>Từ vựng</h4>
+								</div>
+								<div class="text-decor">
+									<h4></h4>
+								</div>
+								<div class="line"></div>
+							</div>
 						</div>
 					</div>
 					<img
@@ -452,6 +505,7 @@
 								<h3>51%</h3>
 							</div>
 						</div>
+						<img src="./images/Homepage/bg-gift.png" alt="" />
 					</div>
 					<div class="contact-form">
 						<div class="contact-form-header">Hiện chỉ còn 10 phần quà</div>
@@ -485,36 +539,39 @@
 								hơn trong công việc sau này thì ba mẹ nên có định hướng cho ....
 							</p>
 						</div>
-						<div class="blog-item">
-							<img src="./images/Homepage/blog_img2.png" alt="" />
-							<div class="blog-item-content">
-								<b>App học tiếng anh cho bé hiệu quả nhất 2022</b>
-								<i>02/09/2022</i>
-								<p>
-									Với sự phát triển mạnh mẽ của công nghệ, việc trẻ tiếp xúc với
-									điện thoại di động sớm là điều không thể tránh khỏi
-								</p>
+						<div class="blog-sub">
+							<div class="blog-item">
+								<img src="./images/Homepage/blog_img2.png" alt="" />
+								<div class="blog-item-content">
+									<b>App học tiếng anh cho bé hiệu quả nhất 2022</b>
+									<i>02/09/2022</i>
+									<p>
+										Với sự phát triển mạnh mẽ của công nghệ, việc trẻ tiếp xúc
+										với điện thoại di động sớm là điều không thể tránh khỏi
+									</p>
+								</div>
 							</div>
-						</div>
-						<div class="blog-item">
-							<img src="./images/Homepage/blog_img3.png" alt="" />
-							<div class="blog-item-content">
-								<b>Từ vựng TA lớp 2 theo chủ đề giúp bé học tốt hơn</b>
-								<i>01/09/2022</i>
-								<p>
-									Lớp 2 là độ tuổi bé cần phải tập làm quen và học tiếng Anh...
-								</p>
+							<div class="blog-item">
+								<img src="./images/Homepage/blog_img3.png" alt="" />
+								<div class="blog-item-content">
+									<b>Từ vựng TA lớp 2 theo chủ đề giúp bé học tốt hơn</b>
+									<i>01/09/2022</i>
+									<p>
+										Lớp 2 là độ tuổi bé cần phải tập làm quen và học tiếng
+										Anh...
+									</p>
+								</div>
 							</div>
-						</div>
-						<div class="blog-item">
-							<img src="./images/Homepage/blog_img4.png" alt="" />
-							<div class="blog-item-content">
-								<b>Tìm hiểu các từ vựng tiếng anh lớp 3 cần thiết nhất</b>
-								<i>05/09/2022</i>
-								<p>
-									Với sự phát triển mạnh mẽ của công nghệ, việc trẻ tiếp xúc với
-									điện thoại di...
-								</p>
+							<div class="blog-item">
+								<img src="./images/Homepage/blog_img4.png" alt="" />
+								<div class="blog-item-content">
+									<b>Tìm hiểu các từ vựng tiếng anh lớp 3 cần thiết nhất</b>
+									<i>05/09/2022</i>
+									<p>
+										Với sự phát triển mạnh mẽ của công nghệ, việc trẻ tiếp xúc
+										với điện thoại di...
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -600,4 +657,23 @@
 			</div>
 		</div>
 	</body>
+	<script>
+		$(document).ready(() => {
+			let w = $(window).width();
+			if (w < 1199.98) {
+				$(".flex-right").removeClass("flex-right");
+			} else {
+				$(".flex-right").addClass("flex-right");
+			}
+			$(window).resize(() => {
+				let width = $(window).width();
+				console.log(width);
+				if (width < 1199.98) {
+					$(".flex-right").removeClass("flex-right");
+				} else {
+					$(".flex-right").addClass("flex-right");
+				}
+			});
+		});
+	</script>
 </html>
