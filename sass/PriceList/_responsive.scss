@@ -1,0 +1,31 @@
+body {
+	@media (max-width: 575.98px) {
+		.list-item {
+			width: 80%;
+		}
+		.item-hot {
+			.list-item-header-hot {
+				left: -35px !important;
+				top: 60px !important;
+			}
+		}
+		.list-item {
+			&-content {
+				img {
+					width: 100%;
+				}
+				&-info {
+					h3.new-price {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 1199.98px) {
+		.list-wrapper {
+			width: 100%;
+		}
+	}
+}

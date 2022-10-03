@@ -39,10 +39,10 @@
 	&-list {
 		margin-top: 100px;
 		padding: 0 78px;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
+		display: flex;
+		flex-wrap: wrap;
 		gap: 45px 70px;
+		justify-content: center;
 	}
 	&-item {
 		width: 450px;

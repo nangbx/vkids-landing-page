@@ -13,7 +13,7 @@
 	&-ui-target {
 		position: absolute;
 		top: -65px;
-		right: 200px;
+		right: 0px;
 		z-index: 200;
 	}
 	&-wrapper {
@@ -22,6 +22,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		position: relative;
 		h2 {
 			text-align: center;
 			width: 435px;
@@ -37,6 +38,8 @@
 	&-card {
 		display: flex;
 		gap: 30px;
+		flex-wrap: wrap-reverse;
+		justify-content: center;
 		.card-img {
 			.card-img-info {
 				text-align: center;
@@ -61,7 +64,7 @@
 			height: 300px;
 			border-radius: 16px;
 			background-color: #e2f2ff;
-			align-self: flex-end;
+			align-self: flex-start;
 			margin-bottom: 20px;
 			span {
 				color: #ffa200;

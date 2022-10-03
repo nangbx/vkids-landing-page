@@ -1,0 +1,240 @@
+body {
+	.slider {
+		@media (max-width: 575.98px) {
+		}
+
+		@media (max-width: 767.98px) {
+			&-content {
+				width: 100%;
+			}
+			&-subtitle {
+				font-size: 35px;
+			}
+		}
+
+		@media (max-width: 991.98px) {
+		}
+		@media (max-width: 1199.98px) {
+		}
+		@media (max-width: 1400px) {
+			#slider-responsive-big {
+				display: none;
+			}
+			#slider-responsive-small {
+				display: flex;
+			}
+			height: 100%;
+			&-ui-human {
+				display: none;
+			}
+			&-content {
+				position: relative;
+				left: 0;
+				top: 0;
+				padding: 20px 0;
+				margin: 0 auto;
+			}
+		}
+		@media (min-width: 1401px) {
+			#slider-responsive-big {
+				display: flex;
+			}
+			#slider-responsive-small {
+				display: none;
+			}
+		}
+	}
+	.info {
+		@media (max-width: 991.98px) {
+			&-content {
+				margin-left: 5px;
+				margin-right: 5px;
+				height: auto;
+				padding-bottom: 20px;
+			}
+		}
+		@media (max-width: 1199.98px) {
+			height: 100%;
+			&-wrapper {
+				width: 100%;
+			}
+		}
+	}
+	.mission {
+		@media (max-width: 767.98px) {
+			&-ui-target {
+				display: none;
+			}
+			&-card {
+				.card-content {
+					margin-left: 20px;
+					margin-right: 20px;
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+
+		@media (max-width: 991.98px) {
+		}
+		@media (max-width: 1199.98px) {
+			&-card {
+				margin-top: 40px;
+			}
+			&-wrapper {
+				width: 100%;
+			}
+		}
+	}
+	.achievement {
+		@media (max-width: 575.98px) {
+		}
+
+		@media (max-width: 767.98px) {
+			&-info {
+				padding: 0 20px;
+			}
+		}
+
+		@media (max-width: 991.98px) {
+		}
+		@media (max-width: 1199.98px) {
+			height: auto;
+			&-wrapper {
+				width: 100%;
+				height: auto;
+				padding-bottom: 30px;
+			}
+			&-info {
+				width: 600px;
+				margin-left: 0;
+				margin-right: 0;
+				img {
+					display: block;
+					width: 210px;
+					margin: 0 auto;
+				}
+			}
+		}
+		@media (max-width: 1300px) {
+			&-wrapper {
+				gap: 10px;
+			}
+		}
+	}
+
+	.timeline {
+		@media (max-width: 575.98px) {
+		}
+
+		@media (max-width: 767.98px) {
+			&-title {
+				width: 500px;
+				font-size: 40px;
+			}
+		}
+
+		@media (max-width: 991.98px) {
+		}
+		@media (max-width: 1199.98px) {
+			&-ui-bg {
+				display: none;
+			}
+			&-wrapper {
+				width: 100%;
+			}
+			&-content {
+				width: 100%;
+			}
+			&-content::after {
+				bottom: 0;
+			}
+			&-content::after {
+				left: 47px;
+			}
+			&-container {
+				width: 100%;
+				justify-content: end;
+				.content {
+					margin-left: 60px;
+					p {
+						width: auto;
+					}
+				}
+
+				.time {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.application {
+		@media (max-width: 1199.98px) {
+			height: auto;
+
+			&-wrapper {
+				width: 100%;
+				height: auto;
+				padding-bottom: 40px;
+			}
+			&-content {
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 30px;
+			}
+		}
+	}
+
+	.address {
+		@media (max-width: 575.98px) {
+		}
+
+		@media (max-width: 767.98px) {
+			&-title {
+				width: 500px;
+				font-size: 38px;
+			}
+		}
+
+		@media (max-width: 991.98px) {
+		}
+		@media (max-width: 1300px) {
+			&-wrapper {
+				width: 100%;
+				box-sizing: border-box;
+				padding: 0 20px;
+			}
+		}
+	}
+	.teams {
+		@media (max-width: 575.98px) {
+		}
+
+		@media (max-width: 767.98px) {
+			&-title {
+				font-size: 40px;
+			}
+		}
+
+		@media (max-width: 991.98px) {
+			&-subtitle {
+				width: 100%;
+				box-sizing: border-box;
+				padding: 0 20px;
+			}
+			&-title {
+				padding: 0 20px;
+			}
+		}
+		@media (max-width: 1199.98px) {
+			&-wrapper {
+				width: 100%;
+			}
+			&-members {
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+		}
+	}
+}

@@ -11,6 +11,8 @@
 		width: 1200px;
 		display: flex;
 		z-index: 100;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 	&-ui {
 		&-bg {

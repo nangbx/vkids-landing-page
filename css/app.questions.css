@@ -162,6 +162,9 @@
   left: 180px;
   top: 75px;
   background-image: url("../../images/Questions/ui-cloud-2.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .title-header h1 {
   margin: 15px 0;
@@ -185,6 +188,7 @@ a {
   color: #1067c6;
   font-family: "Barlow Condensed", sans-serif;
   font-size: 29px;
+  overflow-wrap: break-word;
 }
 
 ul {
@@ -334,10 +338,15 @@ ul li {
 .support-list {
   margin-top: 100px;
   padding: 0 78px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 45px 70px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .support-item {
   width: 450px;
@@ -362,4 +371,88 @@ ul li {
   font-family: "Barlow Condensed", sans-serif;
   color: #2681ff;
   font-size: 23px;
+}
+
+@media (max-width: 575.98px) {
+  body .title-header {
+    width: 100%;
+  }
+  body .title-header h1 {
+    padding-top: 20px;
+    position: absolute;
+    font-size: 45px;
+  }
+  body .questions-item .question {
+    width: 100% !important;
+    right: 0 !important;
+  }
+  body .questions-item .question h3 {
+    width: 90% !important;
+    margin: 0 auto;
+    font-size: 25px !important;
+  }
+  body .support-title {
+    font-size: 35px !important;
+  }
+  body .support-list {
+    padding: 0px 20px 20px;
+  }
+}
+@media (max-width: 400px) {
+  body .support-title {
+    font-size: 30px !important;
+  }
+  body .support-item {
+    width: 100%;
+    height: auto;
+  }
+  body .support-item p {
+    overflow-wrap: anywhere;
+  }
+  body .support-item img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+@media (max-width: 767.98px) {
+  body .support-title {
+    font-size: 45px;
+  }
+}
+@media (max-width: 1199.98px) {
+  body .title {
+    height: 100%;
+  }
+  body .title-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .title-header {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  body .title-ui-gogo {
+    position: relative;
+    right: 0;
+  }
+  body .questions-list .questions-item {
+    width: 100%;
+  }
+  body .support {
+    height: auto;
+  }
+  body .support-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  body .support-title {
+    width: 80%;
+  }
 }/*# sourceMappingURL=app.questions.css.map */
