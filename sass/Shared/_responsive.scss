@@ -16,22 +16,34 @@
 	}
 	@media screen and (max-width: 1299px) {
 		&-menu {
+			display: none;
+			position: absolute;
+			flex-direction: column;
+			top: 60px;
+			gap: 0px;
+
+			width: 100%;
 			a {
-				display: none;
+				background-color: #ffffff;
+				color: #247ee3;
+				width: 100%;
+				border-radius: 0;
 			}
-			a.icon {
-				display: block;
+			a:hover {
+				background-color: #2e6196;
+				color: #ffffff;
 			}
+		}
+		.icon {
+			display: inline;
 		}
 		&-container {
 			width: 80%;
 		}
 	}
 	@media screen and (min-width: 1300px) {
-		&-menu {
-			.icon {
-				display: none;
-			}
+		.icon {
+			display: none;
 		}
 		&-container {
 			min-width: 1300px;

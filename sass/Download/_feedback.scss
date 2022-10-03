@@ -8,6 +8,8 @@
 		width: 1200px;
 		z-index: 10;
 		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 		padding-top: 24px;
 		padding-bottom: 35px;
 		gap: 32px;

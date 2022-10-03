@@ -1,9 +1,9 @@
 .video {
 	width: 100%;
-	height: 662px;
 	background-image: linear-gradient(-61deg, #cd9dff 0%, #88e4eb 100%);
 	display: flex;
 	justify-content: center;
+	padding-bottom: 20px;
 	&-wrapper {
 		width: 1200px;
 		display: flex;
@@ -12,7 +12,7 @@
 	}
 	&-title {
 		width: 917px;
-		height: 72px;
+		padding-bottom: 12px;
 		border-radius: 36px;
 		background-color: #0f58d2;
 		border: 4px solid #ffffff;
@@ -47,11 +47,13 @@
 	&-list {
 		margin-top: 10px;
 		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 		gap: 58px;
 	}
 	&-item {
+		aspect-ratio: 1 / 1;
 		width: 510px;
-		height: 510px;
 		background-repeat: no-repeat;
 		background-size: contain;
 		position: relative;

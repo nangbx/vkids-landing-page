@@ -88,6 +88,25 @@ body {
 	}
 	.achievement {
 		@media (max-width: 575.98px) {
+			&-data {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 20px;
+				&-point {
+					display: none;
+				}
+				&-card {
+					min-width: 400px;
+					height: 300px;
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+					h4 {
+						margin-top: 0;
+					}
+				}
+			}
 		}
 
 		@media (max-width: 767.98px) {
@@ -125,6 +144,10 @@ body {
 
 	.timeline {
 		@media (max-width: 575.98px) {
+			&-title {
+				width: 90% !important;
+				font-size: 30px !important;
+			}
 		}
 
 		@media (max-width: 767.98px) {
@@ -170,6 +193,11 @@ body {
 	}
 
 	.application {
+		@media (max-width: 575.98px) {
+			&-header {
+				width: 95%;
+			}
+		}
 		@media (max-width: 1199.98px) {
 			height: auto;
 
@@ -188,6 +216,10 @@ body {
 
 	.address {
 		@media (max-width: 575.98px) {
+			&-title {
+				width: 95% !important;
+				font-size: 30px !important;
+			}
 		}
 
 		@media (max-width: 767.98px) {

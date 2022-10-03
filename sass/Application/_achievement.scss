@@ -19,6 +19,7 @@
 		background-image: url("../../images/Application/ui-achievement-title.png");
 		background-repeat: no-repeat;
 		background-size: contain;
+		background-position: center;
 		position: relative;
 		* {
 			font-family: "Cookies";
@@ -47,10 +48,13 @@
 	}
 	&-content {
 		display: flex;
-		gap: 16px;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 10px;
 	}
 	&-container {
 		display: flex;
+		max-width: 400px;
 		flex-direction: column;
 		justify-content: center;
 		gap: 60px;

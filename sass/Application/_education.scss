@@ -26,16 +26,16 @@
 		transform: translateY(-50%);
 	}
 	&-method {
-		display: grid;
-		grid-template-columns: 509px 509px;
-		grid-template-rows: 435px 435px;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
 		gap: 51px;
 		position: relative;
 		.method {
-			width: 100%;
-			height: 100%;
+			aspect-ratio: 1.14 / 1;
+			width: 509px;
+			height: auto;
 			box-sizing: border-box;
-
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: contain;
@@ -83,7 +83,7 @@
 				right: -10px;
 			}
 		}
-		.method:nth-child(3) {
+		.method:nth-child(4) {
 			background-image: url("../../images/Application/ui-method-3.png");
 			h3 {
 				margin-right: 50px;
@@ -98,7 +98,7 @@
 				left: 76px;
 			}
 		}
-		.method:nth-child(4) {
+		.method:nth-child(5) {
 			background-image: url("../../images/Application/ui-method-4.png");
 			h3 {
 				text-align: right;
@@ -121,6 +121,7 @@
 			position: absolute;
 			top: 50%;
 			left: 50%;
+			z-index: 10;
 			transform: translate(-50%, -50%);
 			&-content {
 				width: 295px;
