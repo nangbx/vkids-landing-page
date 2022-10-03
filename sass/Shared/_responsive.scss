@@ -41,6 +41,14 @@
 
 .footer {
 	@media (max-width: 575.98px) {
+		.location-list {
+			.location-item {
+				height: auto;
+				img {
+					object-fit: contain;
+				}
+			}
+		}
 	}
 
 	// Small devices (landscape phones, less than 768px)

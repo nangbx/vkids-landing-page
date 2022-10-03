@@ -23,6 +23,15 @@
   }
 }
 
+@media (max-width: 575.98px) {
+  .footer .location-list .location-item {
+    height: auto;
+  }
+  .footer .location-list .location-item img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
 @media (max-width: 767.98px) {
   .footer-wrapper-info {
     width: 100%;

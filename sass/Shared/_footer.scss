@@ -64,6 +64,9 @@
 					}
 				}
 				&-download {
+					display: flex;
+					justify-content: center;
+					flex-wrap: wrap;
 					a {
 						margin-right: 40px;
 					}
