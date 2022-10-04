@@ -32,6 +32,9 @@
 	&-item {
 		display: flex;
 		gap: 22px;
+		img {
+			object-fit: contain;
+		}
 		&-content {
 			b {
 				color: #000000;

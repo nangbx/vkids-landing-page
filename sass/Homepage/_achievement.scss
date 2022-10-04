@@ -79,8 +79,8 @@
 					}
 				}
 				.col-per {
-					width: 82px;
-					height: 82px;
+					min-width: 82px;
+					min-height: 82px;
 					border-radius: 50%;
 					background-image: radial-gradient(
 						circle 61px at 47.76% 44.89%,
