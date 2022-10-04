@@ -11,9 +11,6 @@ body {
 					font-size: 25px;
 				}
 			}
-			&-qr-ui {
-				display: none;
-			}
 		}
 
 		@media (max-width: 767.98px) {
@@ -25,6 +22,9 @@ body {
 					height: 90px;
 					align-self: center;
 				}
+			}
+			&-qr-ui {
+				display: none;
 			}
 		}
 

@@ -3,7 +3,11 @@
 	padding: 0px;
 	font-family: "Barlow Condensed", sans-serif;
 	font-weight: 400;
-	color: #102b49;
+}
+.body {
+	* {
+		color: #102b49;
+	}
 }
 
 a {

@@ -21,6 +21,13 @@ body {
 				}
 			}
 		}
+		.questions-list {
+			.questions-item {
+				.answer {
+					padding: 80px 10px 30px 10px !important;
+				}
+			}
+		}
 		.support {
 			&-title {
 				font-size: 35px !important;
@@ -51,6 +58,12 @@ body {
 		.support {
 			&-title {
 				font-size: 45px;
+			}
+		}
+		.questions-item {
+			.question {
+				right: 50% !important;
+				transform: translateX(50%);
 			}
 		}
 	}

@@ -665,34 +665,6 @@
 			</div>
 		</div>
 	</body>
-	<script>
-		$(document).ready(() => {
-			let w = $(window).width();
-			if (w < 1199.98) {
-				$(".flex-right").removeClass("flex-right");
-			} else {
-				$(".flex-right").addClass("flex-right");
-			}
-			$("#menu-icon").click((e) => {
-				e.preventDefault();
-				let nav = $("#navigate");
-				if (nav.css("display") === "none") {
-					nav.css("display", "flex");
-				} else {
-					nav.css("display", "none");
-				}
-			});
-			$(window).resize(() => {
-				let width = $(window).width();
-				console.log(width);
-				if (width < 1199.98) {
-					$(".flex-right").removeClass("flex-right");
-				} else {
-					$(".flex-right").addClass("flex-right");
-					let nav = $("#navigate");
-					nav.css("display", "flex");
-				}
-			});
-		});
-	</script>
+	<script src="./js/Homepage/main.js"></script>
+	<script src="./js/Shared/main.js"></script>
 </html>
