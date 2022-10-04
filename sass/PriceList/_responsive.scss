@@ -28,4 +28,37 @@ body {
 			width: 100%;
 		}
 	}
+	.contact {
+		@media (max-width: 575.98px) {
+			&-title {
+				&-percent {
+					top: -75px;
+				}
+			}
+		}
+
+		@media (max-width: 767.98px) {
+		}
+
+		@media (max-width: 991.98px) {
+		}
+		@media (max-width: 1199.98px) {
+			&-wrapper {
+				width: 100%;
+				gap: 50px;
+				padding-bottom: 120px;
+			}
+			&-title {
+				&-text {
+					width: 100%;
+				}
+			}
+			&-footer {
+				img {
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+		}
+	}
 }
