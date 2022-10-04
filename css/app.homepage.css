@@ -1693,6 +1693,9 @@ ul {
   .body .contact-title-percent {
     top: -75px;
   }
+  .body .contact-title-text h2 {
+    font-size: 35px;
+  }
 }
 @media (max-width: 1199.98px) {
   .body .contact-wrapper {
