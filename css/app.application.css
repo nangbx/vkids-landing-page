@@ -313,6 +313,7 @@ ul {
   padding-top: 25px;
 }
 .slider-bg {
+  width: 105%;
   position: absolute;
   bottom: 0;
   z-index: 1;
