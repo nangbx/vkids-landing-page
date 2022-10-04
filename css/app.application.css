@@ -1866,6 +1866,12 @@ ul {
     display: none;
   }
 }
+@media (max-width: 400px) {
+  body .teams-member {
+    width: 100%;
+    height: 455px;
+  }
+}
 @media (max-width: 575.98px) {
   body .teams-title {
     font-size: 32px;
@@ -1891,6 +1897,11 @@ ul {
   }
   body .form-ui {
     display: none;
+  }
+}
+@media (max-width: 400px) {
+  body .achievement-title {
+    background-size: cover;
   }
 }
 @media (max-width: 767.98px) {
